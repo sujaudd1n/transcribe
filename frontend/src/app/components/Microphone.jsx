@@ -3,6 +3,7 @@
 import { Button } from '@/components/ui/button';
 import { Mic } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import { BarLoader } from "react-spinners";
 
 const Microphone = ({ setRecordings, recordings }) => {
     const [isRecording, setIsRecording] = useState(false);
@@ -40,7 +41,6 @@ const Microphone = ({ setRecordings, recordings }) => {
 
 
     return (
-<<<<<<< HEAD:frontend/src/app/components/Microphone.jsx
         <div
             className='flex justify-between py-[10px] items-center grow md:self-start'
         >
@@ -50,20 +50,10 @@ const Microphone = ({ setRecordings, recordings }) => {
                 variant='outline'
                 size='icon'
                 title={isRecording ? 'Stop Recording' : 'Start Recording'}
-=======
-        <div>
-            <Button
-                variant='outline'
-                size='icon'
->>>>>>> parent of 91e883c5 (Modify Recording):src/app/components/Microphone.jsx
                 onClick={isRecording ? stopRecording : startRecording}
             >
                 <Mic className='h-4 w-4' />
             </Button>
-<<<<<<< HEAD:frontend/src/app/components/Microphone.jsx
-=======
-            {isRecording && <p>Recording in progress...</p>}
->>>>>>> parent of 91e883c5 (Modify Recording):src/app/components/Microphone.jsx
         </div>
     );
 };

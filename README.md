@@ -3,6 +3,8 @@
 First, run the frontend development server:
 
 ```bash
+cd frontend
+npm install
 npm run dev
 # or
 yarn dev
@@ -16,6 +18,7 @@ After that run the backend server.
 
 ```bash
 cd backend
+npm install
 DEEPGRAM_API_KEY=<apikey> node app.js
 ```
 

@@ -7,6 +7,9 @@ const Recording = ({ recordings, setRecordings }) => {
     const { toast } = useToast()
 
     function getTranscription(id) {
+        toast({
+            description: "Please wait!."
+        })
         /* make request to server to transcribe audio */
         const recording = recordings.find(recording => recording.id === id)
         const formData = new FormData();
